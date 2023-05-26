@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/01 08:02:05.000.804,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/08 08:14:19.000.607,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/01/29 08:19:42.000.977,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/15 16:17:05.000.920,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/04 19:53:55.000.946,=C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/05/04 19:59:48.000.236,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Modul 1\Kalkulator\Unit1.dfm</Transaction>
+    <Transaction>2023/05/04 19:59:48.000.236,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Modul 1\Kalkulator\Unit1.pas</Transaction>
+    <Transaction>2023/05/04 19:59:52.000.057,C:\Users\USER\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\KULIAH\SEMESTER4\Pemprograman Visual 2\Modul 1\Kalkulator\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

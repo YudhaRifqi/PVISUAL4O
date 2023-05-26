@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 541
+  ClientWidth = 724
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Scaled = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 48
+    Top = 73
+    Width = 617
+    Height = 192
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object Chart1: TChart
+    Left = 32
+    Top = 283
+    Width = 657
+    Height = 250
+    Title.Text.Strings = (
+      'TChart')
+    TabOrder = 1
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+      Data = {0000000000}
+      Detail = {0000000000}
+    end
+  end
+  object Button1: TButton
+    Left = 590
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'VIEW GRAFIK'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 496
+    Top = 24
+    Width = 75
+    Height = 25
+    Caption = 'LOAD DATA'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=D:\KU' +
+      'LIAH\SEMESTER4\Pemprograman Visual 2\Modul 4\latihan.mdb;Mode=Sh' +
+      'are Deny None;Persist Security Info=False;Jet OLEDB:System datab' +
+      'ase="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Password=""' +
+      ';Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode=1;Jet O' +
+      'LEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Transaction' +
+      's=1;Jet OLEDB:New Database Password="";Jet OLEDB:Create System D' +
+      'atabase=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB:Don'#39't C' +
+      'opy Locale on Compact=False;Jet OLEDB:Compact Without Replica Re' +
+      'pair=False;Jet OLEDB:SFP=False'
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 64
+    Top = 16
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM jadwal_table')
+    Left = 128
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 192
+    Top = 16
+  end
+  object ADOQuery2: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <>
+    SQL.Strings = (
+      'select * from jadwal_table')
+    Left = 408
+    Top = 24
+  end
+end

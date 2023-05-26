@@ -1,0 +1,146 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 234
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 56
+    Width = 36
+    Height = 13
+    Caption = 'NILAI 1'
+  end
+  object Label2: TLabel
+    Left = 56
+    Top = 83
+    Width = 36
+    Height = 13
+    Caption = 'NILAI 2'
+  end
+  object Label3: TLabel
+    Left = 56
+    Top = 110
+    Width = 36
+    Height = 13
+    Caption = 'NILAI 3'
+  end
+  object Label4: TLabel
+    Left = 320
+    Top = 56
+    Width = 24
+    Height = 13
+    Caption = 'Total'
+  end
+  object Label5: TLabel
+    Left = 320
+    Top = 83
+    Width = 29
+    Height = 13
+    Caption = 'Grade'
+  end
+  object Label6: TLabel
+    Left = 136
+    Top = 24
+    Width = 27
+    Height = 13
+    Caption = 'NILAI'
+  end
+  object Label7: TLabel
+    Left = 216
+    Top = 24
+    Width = 34
+    Height = 13
+    Caption = 'BOBOT'
+  end
+  object Edit1: TEdit
+    Left = 112
+    Top = 53
+    Width = 73
+    Height = 21
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 112
+    Top = 80
+    Width = 73
+    Height = 21
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 112
+    Top = 107
+    Width = 73
+    Height = 21
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 191
+    Top = 53
+    Width = 73
+    Height = 21
+    TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 191
+    Top = 80
+    Width = 73
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit6: TEdit
+    Left = 191
+    Top = 107
+    Width = 73
+    Height = 21
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 110
+    Top = 152
+    Width = 75
+    Height = 25
+    Caption = 'Hitung'
+    TabOrder = 6
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 191
+    Top = 152
+    Width = 75
+    Height = 25
+    Caption = 'Hapus'
+    TabOrder = 7
+  end
+  object Edit7: TEdit
+    Left = 355
+    Top = 53
+    Width = 73
+    Height = 21
+    TabOrder = 8
+  end
+  object Edit8: TEdit
+    Left = 355
+    Top = 80
+    Width = 73
+    Height = 21
+    TabOrder = 9
+  end
+  object Button3: TButton
+    Left = 353
+    Top = 152
+    Width = 75
+    Height = 25
+    Caption = 'Keluar'
+    TabOrder = 10
+  end
+end

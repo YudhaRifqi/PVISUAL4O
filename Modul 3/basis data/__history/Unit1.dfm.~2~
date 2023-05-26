@@ -1,0 +1,81 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 541
+  ClientWidth = 709
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Button1: TButton
+    Left = 544
+    Top = 48
+    Width = 137
+    Height = 25
+    Caption = 'TAMPILKAN DATA GRAFIK'
+    TabOrder = 0
+  end
+  object Chart1: TChart
+    Left = 160
+    Top = 283
+    Width = 400
+    Height = 250
+    Title.Text.Strings = (
+      'TChart')
+    TabOrder = 1
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
+    object Series1: TBarSeries
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Bar'
+      YValues.Order = loNone
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 48
+    Top = 80
+    Width = 633
+    Height = 185
+    DataSource = DataSource1
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\KULIAH\SEMESTER4' +
+      '\Pemprograman Visual 2\Modul 3\basis data\latihan.mdb;Persist Se' +
+      'curity Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 64
+    Top = 16
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from jadwal_table')
+    Left = 168
+    Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 272
+    Top = 16
+  end
+end
